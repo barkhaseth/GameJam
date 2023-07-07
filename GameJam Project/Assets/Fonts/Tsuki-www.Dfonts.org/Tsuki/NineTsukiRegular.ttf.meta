@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3b841e76dc47e4f9abbf57118ec59fdb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Nine Tsuki
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 53ceb908fc56344589462ceb81ecd129, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

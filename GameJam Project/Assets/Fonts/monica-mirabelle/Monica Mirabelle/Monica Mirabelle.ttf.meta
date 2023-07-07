@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5387dde3009c9469487ae43cda192ba7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Monica Mirabelle
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e26219296bc184da986b5f3a9d9b531d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
