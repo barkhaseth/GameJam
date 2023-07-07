@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 07935df2f60c04edba71fbd06184eb9d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Talk Comic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 35ef070838b81428a951a46970f2ea38, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
