@@ -410,7 +410,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Use arrow keys to toggle between pipes. Press space bar to catch the birds.
-    Don't let get past you!
+    Don't let them get past you!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
   m_sharedMaterial: {fileID: -2006612860922650191, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
