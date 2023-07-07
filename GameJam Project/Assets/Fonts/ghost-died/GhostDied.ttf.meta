@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: de6f55cb9327c4ca88ff134da5bd0176
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Ghost Died
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b81371e4e7f4d4e5c839cb013656fca8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
