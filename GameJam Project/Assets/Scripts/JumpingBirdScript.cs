@@ -17,11 +17,15 @@ public class JumpingBirdScript : MonoBehaviour
     public float StunnedTime = 1f;
     public float despawnAfterDeath = 15f;
     bool BirdDeath = false;
+    GameController gameController;
+    int count = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         StartCoroutine(CallBirdJumpLogicRandomly());
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
     private IEnumerator CallBirdJumpLogicRandomly()
     {
@@ -71,6 +75,7 @@ public class JumpingBirdScript : MonoBehaviour
         {
             if (collision.CompareTag("Pillar"))
             {
+                gameController.BirdHitWallSound();
                 rb.velocity = Vector2.zero;
                 rb.AddForce(amountOfForceXKnockback * Vector2.left, ForceMode2D.Impulse);
                 if (transform.position.y < 0)
@@ -85,12 +90,24 @@ public class JumpingBirdScript : MonoBehaviour
             }
             if (collision.CompareTag("Spikes"))
             {
-                animator.Play("Green Bird Hit");
-                StartCoroutine(DespawnBird());
-                rb.velocity = Vector2.zero;
-                StunnedTime = 60f;
-                BirdDeath = true;
-                rb.gravityScale = 1.0f;
+                count++;
+                if(count == 0)
+                {
+                    animator.Play("Green Bird Hit");
+                    gameController.increaseScore();
+                    gameController.BirdHitSpikesSound();
+                    StartCoroutine(DespawnBird());
+                    rb.velocity = Vector2.zero;
+                    StunnedTime = 60f;
+                    BirdDeath = true;
+                    rb.gravityScale = 1.0f;
+                }
+            }
+            if (collision.CompareTag("LifeLost"))
+            {
+                gameController.decreaseLives();
+                gameController.LoseLifeSound();
+                Destroy(this.gameObject);
             }
         }
 

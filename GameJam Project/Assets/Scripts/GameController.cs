@@ -11,12 +11,12 @@ public class GameController : MonoBehaviour
     public int score = 0;
     public int lives = 0;
     public float timer = 0.1f;
-    public TMP_Text scoreText, centerText;
+    public TMP_Text scoreText, centerText, liveText;
     public int highScore;
     private string HIGHSCORE = "HS";
     bool beatHighScore = false;
     public GameObject buttons;
-    public AudioSource birdHitWallSound, birdHitSpikesSound, loseLifeSound;
+    public AudioSource birdHitWallSound, birdHitSpikesSound, heartSound, loseLifeSound, bombSound;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,8 @@ public class GameController : MonoBehaviour
     {
         highScore = PlayerPrefs.GetInt(HIGHSCORE, 0);
         timer += Time.deltaTime;
-        scoreText.text = "SCORE : " + score;
+        scoreText.text = "COINS : " + score;
+        liveText.text = "LIVES : " + lives;
         if (score > highScore)
         {
             highScore = score;
@@ -44,27 +45,37 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void BirdHitWallSound()
+    public void BirdHitWallSound()
     {
         birdHitWallSound.Play();
     }
 
-    void BirdHitSpikesSound()
+    public void BombSound()
+    {
+        bombSound.Play();
+    }
+
+    public void HeartSound()
+    {
+        heartSound.Play();
+    }
+
+    public void BirdHitSpikesSound()
     {
         birdHitSpikesSound.Play();
     }
 
-    void LoseLifeSound()
+    public void LoseLifeSound()
     {
         loseLifeSound.Play();
     }
 
-    void increaseScore()
+    public void increaseScore()
     {
         score = score + 100;
     }
 
-    void playButton()
+    public void playButton()
     {
         SceneManager.LoadScene("Game");
     }
@@ -102,7 +113,15 @@ public class GameController : MonoBehaviour
 
     public void decreaseLives()
     {
-        lives = lives - 1;
+        if(lives>0)
+        {
+            lives = lives - 1;
+        }
+
+        if (lives <= 0)
+        {
+            GameOver();
+        }
     }
 
     void PauseGame()

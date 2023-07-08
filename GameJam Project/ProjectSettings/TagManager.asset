@@ -7,6 +7,7 @@ TagManager:
   - Spikes
   - Pillar
   - InvisibleWall
+  - LifeLost
   layers:
   - Default
   - TransparentFX

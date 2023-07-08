@@ -17,12 +17,16 @@ public class SlowBirdScript : MonoBehaviour
     public float amountOfForceYKnockback = 0;
     bool BirdDeath = false;
     public float despawnAfterDeath = 15f;
+    GameController gameController;
+    int count = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         StartCoroutine(VibrationGenerator());
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     private IEnumerator VibrationGenerator()
@@ -60,6 +64,7 @@ public class SlowBirdScript : MonoBehaviour
         {
             if (collision.CompareTag("Pillar"))
             {
+                gameController.BirdHitWallSound();
                 rb.velocity = Vector2.zero;
                 rb.AddForce(amountOfForceXKnockback * Vector2.left, ForceMode2D.Impulse);
                 if (transform.position.y < 0)
@@ -74,12 +79,24 @@ public class SlowBirdScript : MonoBehaviour
             }
             if (collision.CompareTag("Spikes"))
             {
-                StartCoroutine(DespawnBird());
-                rb.velocity = Vector2.zero;
-                StunnedTime = 60f;
-                animator.Play("pink bird hit");
-                BirdDeath = true;
-                rb.gravityScale = 1.0f;
+                count++;
+                if(count == 0)
+                {
+                    StartCoroutine(DespawnBird());
+                    rb.velocity = Vector2.zero;
+                    StunnedTime = 60f;
+                    animator.Play("pink bird hit");
+                    BirdDeath = true;
+                    rb.gravityScale = 1.0f;
+                    gameController.increaseScore();
+                    gameController.BirdHitSpikesSound();
+                }
+            }
+            if (collision.CompareTag("LifeLost"))
+            {
+                gameController.decreaseLives();
+                gameController.LoseLifeSound();
+                Destroy(this.gameObject);
             }
         }
 

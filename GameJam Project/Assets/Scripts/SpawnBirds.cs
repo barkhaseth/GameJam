@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnBirds : MonoBehaviour
 {
-    public GameObject bird1, bird2, bird3;
+    public GameObject bird1, bird2, bird3, heart, bomb;
     public int dice, birdNumber;
     public int diceMax;
     float timer;
@@ -12,44 +12,42 @@ public class SpawnBirds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diceMax = 700;
         timer = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (timer >= 0 && timer <= 10)
+        if (timer >= 0 && timer <= 20)
         {
-            diceMax = 1500;
+            diceMax = 2900;
         }
 
-
-        if (timer > 10 && timer <= 20)
+        if (timer > 20 && timer <= 35)
         {
-            diceMax = 1400;
+            diceMax = 2700;
         }
 
-        if (timer > 20 && timer <= 30)
+        if (timer > 35 && timer <= 50)
         {
-            diceMax = 1300;
+            diceMax = 2450;
         }
-        if (timer > 30 && timer <= 40)
+        if (timer > 50 && timer <= 60)
         {
-            diceMax = 1200;
+            diceMax = 2000;
         }
 
-        if (timer > 40)
+        if (timer > 60)
         {
-            diceMax = 1100;
+            diceMax = 1800;
         }
         dice = Random.Range(1, diceMax);
 
         if (dice == 1 && Time.timeScale == 1)
         {
             float ySpawn = Random.Range(-3.5f, 4.0f);
-            birdNumber = Random.Range(1, 4);
+            birdNumber = Random.Range(1, 6);
 
             if (birdNumber == 1)
             {
@@ -63,6 +61,14 @@ public class SpawnBirds : MonoBehaviour
             if (birdNumber == 3)
             {
                 Instantiate(bird3, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
+            }
+            if (birdNumber == 4)
+            {
+                Instantiate(heart, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
+            }
+            if (birdNumber == 5)
+            {
+                Instantiate(bomb, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
             }
             dice = 0;
         }
