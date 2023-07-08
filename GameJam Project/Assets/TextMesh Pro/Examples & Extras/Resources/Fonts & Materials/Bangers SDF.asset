@@ -12,6 +12,7 @@ Material:
   m_ValidKeywords:
   - BEVEL_ON
   - GLOW_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -62,6 +63,10 @@ Material:
     - _GlowOffset: 0.17
     - _GlowOuter: 0.07
     - _GlowPower: 0.92
+    - _GlowInner: 0.05
+    - _GlowOffset: 0
+    - _GlowOuter: 0.05
+    - _GlowPower: 0.75
     - _GradientScale: 11
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
@@ -240,6 +245,66 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 53
+    m_Metrics:
+      m_Width: 77.484375
+      m_Height: 106.875
+      m_HorizontalBearingX: 1.265625
+      m_HorizontalBearingY: 106.59375
+      m_HorizontalAdvance: 63.703125
+    m_GlyphRect:
+      m_X: 11
+      m_Y: 432
+      m_Width: 78
+      m_Height: 108
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+  - m_Index: 61
+    m_Metrics:
+      m_Width: 67.78125
+      m_Height: 106.453125
+      m_HorizontalBearingX: -0.421875
+      m_HorizontalBearingY: 106.3125
+      m_HorizontalAdvance: 54.5625
+    m_GlyphRect:
+      m_X: 97
+      m_Y: 11
+      m_Width: 69
+      m_Height: 108
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+  - m_Index: 65
+    m_Metrics:
+      m_Width: 55.6875
+      m_Height: 105.046875
+      m_HorizontalBearingX: 12.9375
+      m_HorizontalBearingY: 104.90625
+      m_HorizontalAdvance: 52.171875
+    m_GlyphRect:
+      m_X: 103
+      m_Y: 270
+      m_Width: 57
+      m_Height: 106
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+  - m_Index: 76
+    m_Metrics:
+      m_Width: 63.703125
+      m_Height: 16.3125
+      m_HorizontalBearingX: -7.59375
+      m_HorizontalBearingY: 0.5625
+      m_HorizontalAdvance: 57.796875
+    m_GlyphRect:
+      m_X: 11
+      m_Y: 11
+      m_Width: 65
+      m_Height: 17
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   - m_Index: 78
     m_Metrics:
       m_Width: 69.890625
@@ -386,6 +451,9 @@ MonoBehaviour:
       m_X: 76
       m_Y: 393
       m_Width: 74
+      m_X: 11
+      m_Y: 178
+      m_Width: 71
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
@@ -430,6 +498,8 @@ MonoBehaviour:
     m_GlyphRect:
       m_X: 745
       m_Y: 11
+      m_X: 11
+      m_Y: 49
       m_Width: 45
       m_Height: 108
     m_Scale: 1
