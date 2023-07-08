@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spikes
+  - Pillar
+  - InvisibleWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Pipes
   - Water
   - UI
   - 
