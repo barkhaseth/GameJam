@@ -8,6 +8,7 @@ TagManager:
   - Pillar
   - InvisibleWall
   - LifeLost
+  - Destroy
   layers:
   - Default
   - TransparentFX

@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c430c93198ae47d68ebd35a94680ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 3
+  speedX: 2.5
   amountOfForceXKnockback: 10
   amountOfForceYKnockback: 0
   VibrationAmountLimitNeg: -1

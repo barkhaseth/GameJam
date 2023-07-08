@@ -91,7 +91,7 @@ public class JumpingBirdScript : MonoBehaviour
             if (collision.CompareTag("Spikes"))
             {
                 count++;
-                if(count == 0)
+                if(count == 1)
                 {
                     animator.Play("Green Bird Hit");
                     gameController.increaseScore();

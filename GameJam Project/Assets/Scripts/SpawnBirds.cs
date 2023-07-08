@@ -21,26 +21,26 @@ public class SpawnBirds : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 0 && timer <= 20)
         {
-            diceMax = 2900;
+            diceMax = 100;
         }
 
         if (timer > 20 && timer <= 35)
         {
-            diceMax = 2700;
+            diceMax = 90;
         }
 
         if (timer > 35 && timer <= 50)
         {
-            diceMax = 2450;
+            diceMax = 80;
         }
         if (timer > 50 && timer <= 60)
         {
-            diceMax = 2000;
+            diceMax = 70;
         }
 
         if (timer > 60)
         {
-            diceMax = 1800;
+            diceMax = 60;
         }
         dice = Random.Range(1, diceMax);
 

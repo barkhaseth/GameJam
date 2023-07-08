@@ -80,7 +80,7 @@ public class SlowBirdScript : MonoBehaviour
             if (collision.CompareTag("Spikes"))
             {
                 count++;
-                if(count == 0)
+                if(count == 1)
                 {
                     StartCoroutine(DespawnBird());
                     rb.velocity = Vector2.zero;
