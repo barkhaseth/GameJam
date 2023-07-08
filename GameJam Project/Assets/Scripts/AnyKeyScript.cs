@@ -10,7 +10,7 @@ public class AnyKeyScript : MonoBehaviour
     {
         if ( Input.anyKey )
         {
-            SceneManager.LoadScene("Menu Systems");
+            SceneManager.LoadScene("Story1");
         }
     }
 }
