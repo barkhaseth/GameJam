@@ -937,6 +937,9 @@ MonoBehaviour:
   centerText: {fileID: 1776499079}
   highScore: 0
   buttons: {fileID: 1143238359}
+  birdHitWallSound: {fileID: 1373464329}
+  birdHitSpikesSound: {fileID: 1921593551}
+  loseLifeSound: {fileID: 682155618}
 --- !u!4 &278296695
 Transform:
   m_ObjectHideFlags: 0
