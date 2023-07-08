@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     private string HIGHSCORE = "HS";
     bool beatHighScore = false;
     public GameObject buttons;
+    public AudioSource birdHitWallSound, birdHitSpikesSound, loseLifeSound;
 
     // Start is called before the first frame update
     void Start()
@@ -43,9 +44,19 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void birdHitSound()
+    void BirdHitWallSound()
     {
+        birdHitWallSound.Play();
+    }
 
+    void BirdHitSpikesSound()
+    {
+        birdHitSpikesSound.Play();
+    }
+
+    void LoseLifeSound()
+    {
+        loseLifeSound.Play();
     }
 
     void increaseScore()
