@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     private string HIGHSCORE = "HS";
     bool beatHighScore = false;
     public GameObject buttons;
+    public bool GamePaused;
     public AudioSource birdHitWallSound, birdHitSpikesSound, heartSound, loseLifeSound, bombSound;
 
     // Start is called before the first frame update
@@ -24,13 +25,17 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         buttons.SetActive(false);
         centerText.text = "";
+        GamePaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         highScore = PlayerPrefs.GetInt(HIGHSCORE, 0);
-        timer += Time.deltaTime;
+        if (GamePaused)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
         scoreText.text = "COINS : " + score;
         liveText.text = "LIVES : " + lives;
         if (score > highScore)
@@ -129,6 +134,7 @@ public class GameController : MonoBehaviour
 
     void PauseGame()
     {
-        Time.timeScale = 0;
+        Debug.Log("game is paused");
+        GamePaused = true;
     }
 }

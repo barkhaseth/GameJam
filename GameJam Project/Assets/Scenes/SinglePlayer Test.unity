@@ -1158,6 +1158,7 @@ MonoBehaviour:
   liveText: {fileID: 1318407275}
   highScore: 0
   buttons: {fileID: 1143238359}
+  GamePaused: 0
   birdHitWallSound: {fileID: 1373464329}
   birdHitSpikesSound: {fileID: 1921593551}
   heartSound: {fileID: 232276581}
