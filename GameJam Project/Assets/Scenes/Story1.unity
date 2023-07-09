@@ -319,8 +319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Birds flapped through endless mazes of pillars until one day they were
-    free!
+  m_text: Birds flapped through endless mazes of pipes, until one day they were free!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
   m_sharedMaterial: {fileID: -2006612860922650191, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
