@@ -82,6 +82,7 @@ public class GameController : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu Systems");
     }
 

@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 267, y: -67}
+  m_AnchoredPosition: {x: 267, y: -73}
   m_SizeDelta: {x: 1441.61, y: 177.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93880272
@@ -214,8 +214,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 102505190}
   - component: {fileID: 102505191}
   - component: {fileID: 102505192}
+  - component: {fileID: 102505193}
   m_Layer: 0
   m_Name: P2
   m_TagString: Untagged
@@ -407,6 +408,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &102505193
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102505189}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 571c9a97b7dda496b83d3c80dc048ef6, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 571c9a97b7dda496b83d3c80dc048ef6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &243328190
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,8 +823,9 @@ Animation:
   m_GameObject: {fileID: 476372849}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: fd8a1f7e199284c37b63ff5d7de9d812, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: fd8a1f7e199284c37b63ff5d7de9d812, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
