@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PausePlay : MonoBehaviour
 {
@@ -40,5 +42,11 @@ public class PausePlay : MonoBehaviour
         GamePaused = false;
         PauseScreen.SetActive(false);
         PauseButton.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        GamePaused = false;
+        SceneManager.LoadScene("Menu Systems");
     }
 }
