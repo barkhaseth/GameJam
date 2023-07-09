@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Story : MonoBehaviour
 {
+    public AudioSource shotgunSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,11 @@ public class Story : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ShotgunSound()
+    {
+        shotgunSound.Play();
     }
 
     public void skip()
