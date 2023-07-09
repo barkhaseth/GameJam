@@ -89,13 +89,13 @@ public class GameController : MonoBehaviour
     {
         if ( beatHighScore == true )
         {
-            centerText.text =  "YOUR SCORE : " + score + " \n  HIGHEST SCORE :  " + highScore + ". \nDO YOU WANT TO TRY AGAIN?";
+            centerText.text =  "YOUR SCORE : " + score + " \n  HIGHEST SCORE :  " + highScore + " \nDO YOU WANT TO TRY AGAIN?";
             buttons.SetActive(true);
             Invoke("PauseGame", 0.75f);
         }
         else
         {
-            centerText.text = "YOUR SCORE : " + score + " \n  HIGHEST SCORE :  " + highScore + ". \nDO YOU WANT TO TRY AGAIN?";
+            centerText.text = "YOUR SCORE : " + score + " \n  HIGHEST SCORE :  " + highScore + " \nDO YOU WANT TO TRY AGAIN?";
             buttons.SetActive(true);
             Invoke("PauseGame", 0.75f);
         }

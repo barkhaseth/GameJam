@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 267, y: -53}
+  m_AnchoredPosition: {x: 267, y: -67}
   m_SizeDelta: {x: 1441.61, y: 177.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &93880272
@@ -185,8 +185,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Trap the birds between the pillars to get the gold back to the bank!\nPress
     the left arrow key to move the left pillars and the right arrow key to move the
-    right pillars. \nyou get 5 lives. \nTrapping hearts will give you more lives.
-    \nBeware of bombs. they just might shake up your whole world..."
+    right pillars. \nDon't let the birds escape or you will lose a life. You get
+    5 lives.\nTrapping hearts will give you more lives. \nClicking on bombs makes
+    you lose one life. Beware of bombs as they just might shake up your whole world..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
   m_sharedMaterial: {fileID: -2006612860922650191, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
@@ -1011,6 +1012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be5f1f0146488c4e8ef37d4b57d1828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotgunSound: {fileID: 0}
 --- !u!1 &843545590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971656894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.47, y: -1.32, z: 0}
+  m_LocalPosition: {x: 5.8, y: -1.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2357,7 +2359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108175507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.68, y: -0.83, z: 0}
+  m_LocalPosition: {x: 5.5, y: -0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
