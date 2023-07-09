@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour
 
     public void LoadMenu()
     {
-        Time.timeScale = 1;
+        GamePaused = false;
         SceneManager.LoadScene("Menu Systems");
     }
 
