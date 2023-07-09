@@ -17,7 +17,7 @@ public class LowerPillar1Script : MonoBehaviour
     {
         if (DowntimeBetweenAttacks == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 DowntimeBetweenAttacks = true;
                 startposY = false;

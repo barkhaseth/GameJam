@@ -21,4 +21,10 @@ public class InstructionsBackButton : MonoBehaviour
         Debug.Log("going back to menu");
         SceneManager.LoadScene("Menu Systems");
     }
+
+    public void PlayButton()
+    {
+        Debug.Log("going to game scene");
+        SceneManager.LoadScene("SinglePlayer Test");
+    }
 }

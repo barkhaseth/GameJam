@@ -17,7 +17,7 @@ public class UpperPillar2Script : MonoBehaviour
     {
         if (DowntimeBetweenAttacks == false)
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 DowntimeBetweenAttacks = true;
                 startposY = false;
