@@ -16,6 +16,9 @@ public class HeartScript : MonoBehaviour
     public float changeVibrationTimer = 0.2f;
     public CameraShake cameraShake;
     int count = 0;
+    float InitialYPos;
+    public float amplitude = 1.5f;
+    public float frequency = 3.0f;
 
 
     // Start is called before the first frame update
@@ -23,33 +26,15 @@ public class HeartScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        InitialYPos = transform.position.y;
     }
-
-    private IEnumerator VibrationGenerator()
-    {
-        while (BirdDeath == false)
-        {
-
-            yield return new WaitForSeconds(changeVibrationTimer);
-            VibrationAmount = Random.Range(VibrationAmountLimitNeg, VibrationAmountLimitPos);
-            if (transform.position.y >= 4)
-            {
-                VibrationAmount = -Mathf.Abs(VibrationAmount);
-            }
-            if (transform.position.y <= -4)
-            {
-                VibrationAmount = Mathf.Abs(VibrationAmount);
-            }
-
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (BirdDeath == false)
         {
-            rb.velocity = new Vector2(speedX, VibrationAmount);
+            float newYPos = InitialYPos + Mathf.Sin(Time.time * frequency) * amplitude;
+            rb.velocity = new Vector2(speedX, newYPos - transform.position.y);
         }
     }
 
@@ -61,31 +46,28 @@ public class HeartScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if (collision.CompareTag("Pillar"))
+        if (collision.CompareTag("Pillar"))
+        {
+            BirdDeath = true;
+            rb.velocity = new Vector2(0, -3);
+            StartCoroutine(DestroyBomb());
+            //rb.velocity = Vector2.zero;
+            //rb.AddForce(amountOfForceYKnockback * Vector2.down, ForceMode2D.Impulse);
+        }
+        if (collision.CompareTag("Spikes"))
+        {
+            count++;
+            if (count == 1)
             {
-                Debug.Log("Pillar detected");
-                BirdDeath = true;
-                rb.velocity = new Vector2(0,-3);
-                StartCoroutine(DestroyBomb());
-                //rb.velocity = Vector2.zero;
-                //rb.AddForce(amountOfForceYKnockback * Vector2.down, ForceMode2D.Impulse);
-            }
-            if (collision.CompareTag("Spikes"))
-            {
-                count++;
-                if(count == 1)
-                {
-                    gameController.increaseLives();
-                    gameController.HeartSound();
-                    Destroy(this.gameObject);
-                }
-            }
-            if (collision.CompareTag("LifeLost"))
-            {
+                gameController.increaseLives();
+                gameController.HeartSound();
                 Destroy(this.gameObject);
             }
+        }
+        if (collision.CompareTag("LifeLost"))
+        {
+            Destroy(this.gameObject);
+        }
 
     }
 }
-
-
