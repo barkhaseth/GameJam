@@ -1540,7 +1540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112964662}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 164, y: 749, z: 0}
+  m_LocalPosition: {x: 164, y: 765, z: 0}
   m_LocalScale: {x: 193.14388, y: 112.569534, z: 493.9667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1624,7 +1624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371307873}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 698, y: 749, z: 0}
+  m_LocalPosition: {x: 698, y: 765, z: 0}
   m_LocalScale: {x: 193.14388, y: 112.569534, z: 493.9667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1708,7 +1708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469957701}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -363, y: 749, z: 0}
+  m_LocalPosition: {x: -363, y: 765, z: 0}
   m_LocalScale: {x: 193.14388, y: 112.569534, z: 493.9667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2349,7 +2349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: 388}
+  m_AnchoredPosition: {x: 49, y: 346}
   m_SizeDelta: {x: 1206.17, y: 119.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087596446
@@ -2372,8 +2372,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A long time ago... Birds flapped through endless mazes of pillars until
-    one day they were free!
+  m_text: "A long time ago, birds flapped through endless mazes of pillars until
+    one day... \nthey were free!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: f629c6e43dba4bf38cb74d8860150664, type: 2}
