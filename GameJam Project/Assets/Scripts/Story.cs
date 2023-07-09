@@ -42,4 +42,9 @@ public class Story : MonoBehaviour
     {
         SceneManager.LoadScene("Title Screen");
     }
+
+    public void play()
+    {
+        SceneManager.LoadScene("SinglePlayer Test");
+    }
 }
