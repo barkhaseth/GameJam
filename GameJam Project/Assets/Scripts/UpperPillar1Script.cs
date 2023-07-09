@@ -24,10 +24,10 @@ public class UpperPillar1Script : MonoBehaviour
                 rb.AddForce(CrushingSpeed * Vector2.down);
             }
         }
-        if (startposY == true)
-        {
-            rb.velocity = Vector2.zero;
-        }
+        //if (startposY == true)
+        //{
+            //rb.velocity = Vector2.zero;
+        //}
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
