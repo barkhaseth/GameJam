@@ -46,7 +46,7 @@ public class SpawnBirds : MonoBehaviour
 
         if (dice == 1 && Time.timeScale == 1)
         {
-            float ySpawn = Random.Range(-3.0f, 3.5f);
+            float ySpawn = Random.Range(-3.0f, 2.75f);
             birdNumber = Random.Range(1, 6);
 
             if (birdNumber == 1)
@@ -64,11 +64,13 @@ public class SpawnBirds : MonoBehaviour
             }
             if (birdNumber == 4)
             {
-                Instantiate(heart, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
+                int r = Random.Range(1, 3);
+                if (r == 1) Instantiate(heart, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
             }
             if (birdNumber == 5)
             {
-                Instantiate(bomb, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
+                int r = Random.Range(1, 3);
+                if (r==1) Instantiate(bomb, new Vector3(transform.position.x, ySpawn, 0), transform.rotation);
             }
             dice = 0;
         }

@@ -2713,7 +2713,7 @@ MonoBehaviour:
   bird2: {fileID: 8273439960324866003, guid: 9cbfde18c7ead4542b722cfb9815252f, type: 3}
   bird3: {fileID: 2096630764171718598, guid: 8861c2a98fbd1514ca907c4b38cd060d, type: 3}
   heart: {fileID: 4910136084032092253, guid: 675382b81028f4aaa80c7957a1b19de2, type: 3}
-  bomb: {fileID: 938387831544356838, guid: 5fd72711cf4db4b16a819e8b0d58bf3d, type: 3}
+  bomb: {fileID: 2842565662657569713, guid: 5fd72711cf4db4b16a819e8b0d58bf3d, type: 3}
   dice: 0
   birdNumber: 0
   diceMax: 2000
