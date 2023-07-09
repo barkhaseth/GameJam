@@ -8,8 +8,8 @@ public class FastBirdScript : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     public float speedX = 3f;
-    public float VibrationAmountLimitNeg = -1;
-    public float VibrationAmountLimitPos = 1.2f;
+    public float VibrationAmountLimitNeg = -1.5f;
+    public float VibrationAmountLimitPos = 1.5f;
     public float VibrationAmount;
     public float changeVibrationTimer = 0.2f;
     public float StunnedTime = 1f;

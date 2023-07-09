@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49, y: 311}
+  m_AnchoredPosition: {x: 49, y: 289}
   m_SizeDelta: {x: 1441.61, y: 177.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &220603905
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Birds flapped through endless mazes of pipes, until one day they were free!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
   m_sharedMaterial: {fileID: -2006612860922650191, guid: a75ddb1c6c4494af2a37ff593e574776, type: 2}
@@ -772,7 +772,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1036,7 +1036,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1120,7 +1120,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1589,7 +1589,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1673,7 +1673,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1757,7 +1757,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f60724658d6040d5a9a5524019427c0, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.69423604, a: 1}
+  m_Color: {r: 0.19607843, g: 0.5411765, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2081,6 +2081,7 @@ GameObject:
   - component: {fileID: 1956279462}
   - component: {fileID: 1956279463}
   - component: {fileID: 1956279464}
+  - component: {fileID: 1956279465}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2212,6 +2213,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1956279465
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956279461}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 907e03a0676604c0abad1fc8b5b09e3c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 907e03a0676604c0abad1fc8b5b09e3c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2082010868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,7 +2349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: 445}
+  m_AnchoredPosition: {x: 33, y: 388}
   m_SizeDelta: {x: 1206.17, y: 119.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087596446
@@ -2355,7 +2372,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A long time ago...
+  m_text: A long time ago... Birds flapped through endless mazes of pillars until
+    one day they were free!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: f629c6e43dba4bf38cb74d8860150664, type: 2}
@@ -2382,8 +2400,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
