@@ -17,8 +17,8 @@ public class HeartScript : MonoBehaviour
     public CameraShake cameraShake;
     int count = 0;
     float InitialYPos;
-    public float amplitude = 1.5f; 
-    public float frequency = 3.0f; 
+    public float amplitude = 1.5f;
+    public float frequency = 3.0f;
 
 
     // Start is called before the first frame update
@@ -46,30 +46,28 @@ public class HeartScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if (collision.CompareTag("Pillar"))
+        if (collision.CompareTag("Pillar"))
+        {
+            BirdDeath = true;
+            rb.velocity = new Vector2(0, -3);
+            StartCoroutine(DestroyBomb());
+            //rb.velocity = Vector2.zero;
+            //rb.AddForce(amountOfForceYKnockback * Vector2.down, ForceMode2D.Impulse);
+        }
+        if (collision.CompareTag("Spikes"))
+        {
+            count++;
+            if (count == 1)
             {
-                BirdDeath = true;
-                rb.velocity = new Vector2(0,-3);
-                StartCoroutine(DestroyBomb());
-                //rb.velocity = Vector2.zero;
-                //rb.AddForce(amountOfForceYKnockback * Vector2.down, ForceMode2D.Impulse);
-            }
-            if (collision.CompareTag("Spikes"))
-            {
-                count++;
-                if(count == 1)
-                {
-                    gameController.increaseLives();
-                    gameController.HeartSound();
-                    Destroy(this.gameObject);
-                }
-            }
-            if (collision.CompareTag("LifeLost"))
-            {
+                gameController.increaseLives();
+                gameController.HeartSound();
                 Destroy(this.gameObject);
             }
+        }
+        if (collision.CompareTag("LifeLost"))
+        {
+            Destroy(this.gameObject);
+        }
 
     }
 }
-
-
