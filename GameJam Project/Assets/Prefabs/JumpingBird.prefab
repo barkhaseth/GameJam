@@ -155,6 +155,8 @@ MonoBehaviour:
   UpperJumpDelay: 1.3
   StunnedTime: 0.4
   despawnAfterDeath: 15
+  plusHundred: {fileID: 2501267286104121124, guid: 99a552cd4757f4e90916a0ef3fda34d6, type: 3}
+  bird: {fileID: 8273439960324866003}
 --- !u!95 &8273439960324865996
 Animator:
   serializedVersion: 5

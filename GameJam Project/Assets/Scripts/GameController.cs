@@ -108,7 +108,10 @@ public class GameController : MonoBehaviour
 
     public void increaseLives()
     {
-        lives = lives + 1;
+        if(lives<=10)
+        {
+            lives = lives + 1;
+        }
     }
 
     public void decreaseLives()

@@ -156,6 +156,8 @@ MonoBehaviour:
   amountOfForceXKnockback: 3
   amountOfForceYKnockback: 1
   despawnAfterDeath: 15
+  plusHundred: {fileID: 2501267286104121124, guid: 99a552cd4757f4e90916a0ef3fda34d6, type: 3}
+  bird: {fileID: 2096630764171718598}
 --- !u!95 &2096630764171718597
 Animator:
   serializedVersion: 5

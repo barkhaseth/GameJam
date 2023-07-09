@@ -20,6 +20,7 @@ public class FastBirdScript : MonoBehaviour
     public float despawnAfterDeath = 15f;
     GameController gameController;
     int count = 0;
+    public GameObject plusHundred, bird;
 
     // Start is called before the first frame update
     void Start()
@@ -91,6 +92,14 @@ public class FastBirdScript : MonoBehaviour
                     animator.Play("red bird hit");
                     BirdDeath = true;
                     rb.gravityScale = 1.0f;
+
+                    GameObject score;
+                    Transform targetTransform = bird.transform;
+                    Vector3 targetPosition = targetTransform.position;
+            
+                    score = (GameObject) Instantiate(plusHundred, targetPosition, Quaternion.identity);
+
+                    Destroy(score, 1.0f);
                 }
             }
             if (collision.CompareTag("LifeLost"))
