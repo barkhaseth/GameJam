@@ -2130,6 +2130,7 @@ GameObject:
   - component: {fileID: 1956279462}
   - component: {fileID: 1956279463}
   - component: {fileID: 1956279464}
+  - component: {fileID: 1956279465}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2261,6 +2262,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &1956279465
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956279461}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d9f6f89cbe68047d6b8b2eb36a48ead5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d9f6f89cbe68047d6b8b2eb36a48ead5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2029062664
 GameObject:
   m_ObjectHideFlags: 0

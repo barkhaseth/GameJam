@@ -96,16 +96,7 @@ AnimationClip:
     path: 
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves:
-  - curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 7.5333333
-      value: {fileID: 0}
-    attribute: laugh
-    path: 
-    classID: 114
-    script: {fileID: 11500000, guid: 7d68e69c6178146ffb04a333c7f33b6e, type: 3}
+  m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -119,7 +110,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 7.55
+    m_StopTime: 7.5333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
