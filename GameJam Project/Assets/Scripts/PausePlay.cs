@@ -7,6 +7,7 @@ public class PausePlay : MonoBehaviour
 
     public GameObject PauseScreen;
     public GameObject PauseButton;
+    GameController gameController;
 
     bool GamePaused;
 
@@ -15,6 +16,7 @@ public class PausePlay : MonoBehaviour
     void Start()
     {
         GamePaused = false;
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class PausePlay : MonoBehaviour
     {
         if (GamePaused)
             Time.timeScale = 0;
-        else
+        if (GamePaused == false && gameController.GamePaused == false)
             Time.timeScale = 1;
     }
 
