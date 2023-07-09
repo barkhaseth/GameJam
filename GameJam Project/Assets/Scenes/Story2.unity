@@ -1148,7 +1148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1614077194}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917189307
 GameObject:
@@ -1213,8 +1213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d68e69c6178146ffb04a333c7f33b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laugh: {fileID: 119065256}
-  bird2: {fileID: 917189307}
 --- !u!1 &934250627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 426}
+  m_AnchoredPosition: {x: 63, y: 426}
   m_SizeDelta: {x: 1206.17, y: 119.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1502794630
@@ -1779,7 +1777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Then they started robbing banks...
+  m_text: But things didn't go as planned...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: f629c6e43dba4bf38cb74d8860150664, type: 2}
@@ -1842,7 +1840,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -134.53534, y: 0, z: -134.53577, w: 0}
+  m_margin: {x: -134.53534, y: 0, z: -221.18866, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1886,6 +1884,7 @@ Transform:
   m_Children:
   - {fileID: 1777679484}
   - {fileID: 25437334}
+  - {fileID: 884683805}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
