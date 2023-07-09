@@ -46,7 +46,7 @@ public class SpawnBirds : MonoBehaviour
 
         if (dice == 1 && Time.timeScale == 1)
         {
-            float ySpawn = Random.Range(-3.5f, 4.0f);
+            float ySpawn = Random.Range(-3.0f, 3.5f);
             birdNumber = Random.Range(1, 6);
 
             if (birdNumber == 1)
